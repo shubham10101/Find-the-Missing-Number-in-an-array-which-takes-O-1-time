@@ -1,0 +1,36 @@
+//let's understand this 
+
+// ((n +1)* (n+2)/2) - (((n)* (n+1)/2)+1
+
+//(n)* (n+1)/2 =  sum of natural numbers 
+
+// ((n +1)* (n+1+1)/2) = sum of natural numbers  here 1 is added with n because of in number's there is one number is missing so we add 1
+
+//let's take  
+
+//sum of natural no. where one no. is missing as  A = (n +1)* (n+1+1)/2     and    
+
+//sum of existing no. in array  as  B= (n)* (n+1)/2  
+
+// now when we perform Sum of existing no. in array it always give us 1 value less than the expected ans    
+
+//so we will add 1 no. with this
+
+// let's understand this with an example    B={1,2,3,4,5,7}  here   n =6   (elements in a)  
+
+// n*(n+1)/2  
+
+//  =  6 * 7 / 2
+
+//  =  21  
+
+//  but expected ans is 22 (is sum of no. in B ) so that's why we have to add 1  with B
+
+//now   T=   A    -  (B+1)
+
+//   or T =    ( ( n  + 1 ) *  ( n + 2 ) / 2)     -   ( ( ( n ) *   ( n + 1 ) / 2 ) + 1);
+
+
+input: arr[] = {1, 3, 2 , 4 , 5 ,7 }
+output: 6
+Explanation: The missing number from 1 to 7 is 6
