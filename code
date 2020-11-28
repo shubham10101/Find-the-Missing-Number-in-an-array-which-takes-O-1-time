@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+// function to get missing no in an array
+int getMissingNo(int a[], int n)
+{
+    return ((n + 1) * (n + 2) / 2) - (((n) * (n + 1) / 2) + 1);
+}
+
+// Driver program to test above function
+
+int main()
+{
+
+    int arr[] = { 1, 2, 3, 4, 5, 7 };
+
+    cout << getMissingNo(arr, sizeof(arr) / sizeof(arr[0]));
+
+    return 0;
+}
